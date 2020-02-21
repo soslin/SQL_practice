@@ -60,7 +60,7 @@ SELECT MIN(salary), MAX(salary)
 FROM salaries;
 
 SELECT LOWER(CONCAT(SUBSTR(first_name,1,4), SUBSTR(last_name, 1,4), '_',  
-SUBSTR(birth_date,6,7), SUBSTR(birth_date,3,4)))
+SUBSTR(birth_date,6,2), SUBSTR(birth_date,3,2)))
 FROM employees
 LIMIT 10;
 
